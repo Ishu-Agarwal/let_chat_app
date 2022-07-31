@@ -37,7 +37,7 @@ function Sidebar() {
             console.log("invalid");
         }
         else{
-            data.sort((a, b) => a.doa > b.doa ? 1 : -1);
+            data.sort((a, b) => a.doa < b.doa ? 1 : -1);
             setRooms(data);
         }
     }

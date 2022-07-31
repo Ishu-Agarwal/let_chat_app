@@ -35,7 +35,7 @@ router.post('/Showmessage',async (req,res) =>{
             
         const userr = req.body.email;
         const userr1 = req.body.femail;
-        const userLogin = await Message.find({email : userr,fmail:userr1});
+        const userLogin = await Message.find({email : userr , femail:userr1});
         const userLogin1 = await Message.find({email : userr1,femail:userr});
         console.log(userLogin);
         const userLog=[...userLogin,...userLogin1];
